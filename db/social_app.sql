@@ -29,7 +29,7 @@ USE `social_app`;
 --
 
 CREATE TABLE `tb_user` (
-  `us_id` int(10) NOT NULL,
+  `us_id` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `us_username` varchar(255) NOT NULL,
   `us_password` varchar(255) NOT NULL,
   `us_name` varchar(255) NOT NULL
@@ -53,7 +53,7 @@ INSERT INTO `tb_user` (`us_id`, `us_username`, `us_password`, `us_name`) VALUES
 --
 
 CREATE TABLE `tb_user_friend` (
-  `uf_id` int(10) NOT NULL,
+  `uf_id` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `uf_id_user` int(10) NOT NULL,
   `uf_id_friend` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -79,7 +79,7 @@ INSERT INTO `tb_user_friend` (`uf_id`, `uf_id_user`, `uf_id_friend`) VALUES
 --
 
 CREATE TABLE `tb_user_post` (
-  `up_id` int(10) NOT NULL,
+  `up_id` int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `up_id_user` int(10) NOT NULL,
   `up_post` varchar(255) NOT NULL,
   `up_send_date` datetime NOT NULL
