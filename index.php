@@ -1,8 +1,8 @@
 <?php
 // load vendor
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/src/functions.php';
 require_once __DIR__ . '/src/connect.php';
+require_once __DIR__ . '/src/util/functions.php';
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
