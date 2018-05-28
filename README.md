@@ -18,19 +18,19 @@ Use curl or postman chrome extension to test the API
 
 ###### GET Feed
 ```
-$ curl -i http://localhost/social-media/feed/ID_USER
+$ curl -i http://localhost/{{PROJECT_NAME}}/feed/ID_USER
 ```
 
 ###### GET Friends
 ```
-$ curl -i http://localhost/social-media/friends/ID_USER
+$ curl -i http://localhost/{{PROJECT_NAME}}/friends/ID_USER
 ```
 
 ###### POST Status
 ```
 $ curl -X POST -H "Content-Type: application/json" \
 -d '{"user":"ID_USER","post":"DATA"}' \
--i http://localhost/social-media/post
+-i http://localhost/{{PROJECT_NAME}}/post
 ```
 ## Frameworks
 * [Silex](http://silex.sensiolabs.org/ "Silex Framework") a PHP micro-framework based on the Symfony Components.
